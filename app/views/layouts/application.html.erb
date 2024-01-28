@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <header>
+<div class="header-logo">
+<a href="/"> Websiteku </a>
+</div>
+
+<div class="header-menus">
+<li>
+<a href="/">Home</a>
+</li>
+<li>
+<a href="/postingan/index">Postingan</a>
+</li>
+<li>
+<a href="/artikel">Artikel</a>
+</li>
+<li>
+<a href="/about">About</a>
+</li>
+</div>
+</header>
+    <%= yield %>
+  </body>
+</html>

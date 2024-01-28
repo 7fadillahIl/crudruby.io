@@ -1,0 +1,17 @@
+<div class="main posts-index">
+  <div class="container">
+    <h1>Edit Data</h1>
+    <%= form_tag("/postingan/update/#{@data.id}") do %>
+      <div class="form">
+        <div class="form-body">
+          <label>Judul</label>
+          <input name="judul" value="<%= @data.judul %>" required>
+          <label>Deskripsi</label>
+          <textarea name="deskripsi" required><%= @data.deskripsi %></textarea>
+          <button type="submit">Simpan</button>
+          <a href="/postingan/index">Kembali</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

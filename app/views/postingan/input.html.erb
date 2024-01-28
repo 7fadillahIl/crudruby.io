@@ -1,0 +1,18 @@
+<div class="main posts-index">
+<div class="container">
+
+        <%= form_tag("/postingan/create") do %>
+            <div class="form">
+            <div class="form-body">
+                <label>Judul</label>
+                <input name="judul" required>
+                <label>Deskripsi</label>
+                <textarea name="deskripsi" required></textarea>
+                <button type="submit">Simpan</button>           
+                <a href="/postingan/index">Kembali</a>
+                </div>
+            </div>
+         <% end %>   
+
+</div>
+</div>
